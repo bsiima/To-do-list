@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List & Blog</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">To-Do List & Blog</h1>
+        <div class="row">
+            <!-- To-Do List Section -->
+            <div class="col-md-6">
+                <h2>To-Do List</h2>
+                <div class="input-group mb-3">
+                    <input type="text" id="task-input" class="form-control" placeholder="Add a new task" required>
+                    <div class="input-group-append">
+                        <button id="add-task-btn" class="btn btn-primary">Add Task</button>
+                    </div>
+                </div>
+                <ul id="task-list" class="list-group"></ul>
+            </div>
+
+            <!-- Blog Section -->
+            <div class="col-md-6">
+                <h2>Blog</h2>
+                <div class="form-group">
+                    <input type="text" id="post-title" class="form-control" placeholder="Post Title" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="post-content" class="form-control" placeholder="Post Content" required></textarea>
+                </div>
+                <button id="save-post-btn" class="btn btn-success">Save Post</button>
+                <ul id="post-list" class="list-group mt-3"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
